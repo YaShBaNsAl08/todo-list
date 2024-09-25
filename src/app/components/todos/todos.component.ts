@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Todo } from '../../todo';
 import { CommonModule } from '@angular/common';
 import { TodoItemComponent } from "../todo-item/todo-item.component";
 import { TodoAdditemComponent } from "../todo-additem/todo-additem.component";
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule, TodoItemComponent, TodoAdditemComponent],
+  imports: [CommonModule, TodoItemComponent, TodoAdditemComponent,MatCardModule],
   templateUrl: './todos.component.html',
-  styleUrl: './todos.component.css'
+  styleUrl: './todos.component.css',
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class TodosComponent implements OnInit{
   localitem:string | null;
