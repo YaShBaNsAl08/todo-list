@@ -1,11 +1,12 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Todo } from '../../todo';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-todo-additem',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,MatButtonModule,MatCardModule],
   templateUrl: './todo-additem.component.html',
   styleUrl: './todo-additem.component.css'
 })

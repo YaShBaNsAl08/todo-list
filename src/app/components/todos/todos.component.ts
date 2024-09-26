@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { TodoItemComponent } from "../todo-item/todo-item.component";
 import { TodoAdditemComponent } from "../todo-additem/todo-additem.component";
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule, TodoItemComponent, TodoAdditemComponent,MatCardModule],
+  imports: [CommonModule, TodoItemComponent, TodoAdditemComponent,MatCardModule,MatButtonModule],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.css',
   changeDetection:ChangeDetectionStrategy.OnPush
