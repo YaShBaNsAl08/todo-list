@@ -1,3 +1,8 @@
 .container { 
-    background-color: violet;
+    /* margin: 0;
+    background-color: aqua; */
+}
+.addtodo{
+    display: flex;
+    justify-content: center;
 }
