@@ -1,8 +1,14 @@
-.container { 
-    /* margin: 0;
-    background-color: aqua; */
-}
 .addtodo{
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+.todo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.todo-item{
+    word-wrap: break-word;
+    word-break: break-all;
 }

@@ -1,21 +1,23 @@
-<mat-card>
-  <mat-card-content>
-    <div class="my-3">
-      <h4>ADD TODO</h4>
-  <form (ngSubmit)="onSubmit()">
-      <div class="mb-2">
-        <label for="title" class="form-label">Todo Title</label>
-        <input type="text" class="form-control" name="title" id="title" [(ngModel)]="title" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-2">
-        <label for="desc" class="form-label">Todo Description</label>
-        <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc">
-      </div>
-      <button mat-flat-button type="submit">Add Todo</button>
-    </form>
-  </div>
-  </mat-card-content>
-</mat-card>
+<div class="todo-add">
+  <mat-card>
+    <mat-card-content>
+      <div class="my-3">
+        <h4 class="common-color">ADD TODO</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-2">
+          <label for="title" class="form-label common-color">Todo Title</label>
+          <input type="text" class="form-control" name="title" id="title" [(ngModel)]="title">
+        </div>
+        <div class="mb-2">
+          <label for="desc" class="form-label common-color">Todo Description</label>
+          <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc">
+        </div>
+        <button mat-flat-button type="submit">Add Todo</button>
+      </form>
+    </div>
+    </mat-card-content>
+  </mat-card>
+</div>
 <!--  checkthis erroronmorning 
 RROR RuntimeError: NG01352: If ngModel is used within a form tag, either the name attribute must be set or the form
     control must be defined as 'standalone' in ngModelOptions.

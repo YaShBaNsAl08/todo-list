@@ -1,3 +1,7 @@
 .strike{
     text-decoration: line-through;
 }
+.btn{
+    background-color: red;
+    color: #fff;
+}

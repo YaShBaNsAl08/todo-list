@@ -1,13 +1,15 @@
 <div class="container">
-    <h1 class="text-center mb-4">ToDo List By Yash Bansal</h1>
-<div class="addtodo">
+    <!-- <h1 class="text-center mb-4">ToDo List By Yash Bansal</h1> -->
+<div class="addtodo my-2">
     <app-todo-additem (addtodo)="addtodo($event)"></app-todo-additem>
 </div>
-<h4>Your Todo</h4>
-<div *ngIf="this.todos.length===0; else elseBlock">No Todos!!</div>
+<h4 class="text-center my-4">Your Todo</h4>
+<div class="text-center" *ngIf="this.todos.length===0; else elseBlock">No Todos!!</div>
 <ng-template #elseBlock>
-    <div *ngFor="let todo of todos; index as i">
-        <app-todo-item [todo]="todo" [id]="i" (deltodo)="deletetodo($event)" (checktodo)="checktodo($event)"></app-todo-item>
+    <div class="todo-grid">
+        <div *ngFor="let todo of todos; index as i" class="todo-item">
+            <app-todo-item [todo]="todo" [id]="i" (deltodo)="deletetodo($event)" (checktodo)="checktodo($event)"></app-todo-item>
+        </div>
     </div>
 </ng-template>
 </div>
