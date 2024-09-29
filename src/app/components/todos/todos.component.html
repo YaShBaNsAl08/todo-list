@@ -3,8 +3,8 @@
 <div class="addtodo my-2">
     <app-todo-additem (addtodo)="addtodo($event)"></app-todo-additem>
 </div>
-<h4 class="text-center my-4">Your Todo</h4>
-<div class="text-center" *ngIf="this.todos.length===0; else elseBlock">No Todos!!</div>
+<h4 class="text-center my-4 todo-bold">Your Todo</h4>
+<div class="text-center todo-bold" *ngIf="this.todos.length===0; else elseBlock">No Todos!!</div>
 <ng-template #elseBlock>
     <div class="todo-grid">
         <div *ngFor="let todo of todos; index as i" class="todo-item">

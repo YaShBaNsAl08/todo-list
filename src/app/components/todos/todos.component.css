@@ -12,3 +12,6 @@
     word-wrap: break-word;
     word-break: break-all;
 }
+.todo-bold{
+    font-weight: 600;
+}

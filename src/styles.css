@@ -7,14 +7,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 .common-color{
-    color: cyan;
+    color: #00FFFF;
 }
 .common-title{
-    color: teal;
+    color: #008080;
     margin-top: 20px !important;
     margin-bottom: 50px !important;
     justify-content: center !important;
     text-align: center;
     font-size: 4em !important;
     font-weight: 900 !important;
+}
+.common-subtitle{
+    color: #006D6F;
+    padding: 12px;
+}
+.common-subheading{
+    color: #F0FFFF;
+    padding-top: 10px;
+    font-weight: 200 !important;
 }
